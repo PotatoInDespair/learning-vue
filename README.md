@@ -29,7 +29,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2. add this to settings.json (skip anything that's already there):
 
 ```
-"editor.tabSize": 2,
 "editor.formatOnSave": true,
 "[html]": {
 	"editor.defaultFormatter": "HookyQR.beautify"
@@ -47,20 +46,13 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 
 which does the following:
+```
+i. turns on format on save
+ii. sets default .html formatter to Beautify 
+iii. sets vetur's html formatter to Beautify
+iv. sets vetur's js formatter to none (we will use eslint for this)
+v. turns off .js formatting for Beautify (we will use eslint for this)
+vi. turns off html attribute wrapping in vetur (it won't make a new line for every attribute)
 
-i. sets tab size to 2 spaces
-
-ii. turns on format on save
-
-iii. sets default .html formatter to Beautify
-
-iv. sets vetur's html formatter to Beautify
-
-v. sets vetur's js formatter to none (we will use eslint for this)
-
-vi. turns off .js formatting for Beautify (we will use eslint for this)
-
-vii. turns off html attribute wrapping in vetur (it won't make a new line for every attribute)
-
-
-note: i-v can be done using the settings UI, but vi and vii have to be inserted manually
+note: i-iv can be done using the settings UI, but v and vi have to be inserted manually
+```
