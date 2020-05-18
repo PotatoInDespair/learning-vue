@@ -46,11 +46,19 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ```
 
 which does the following:
+
 i. turns on format on save
+
 ii. sets default .html formatter to Beautify 
+
 iii. sets vetur's html formatter to Beautify
+
 iv. sets vetur's js formatter to none (we will use eslint for this)
+
 v. turns off html attribute wrapping in vetur (it won't make a new line for every attribute)
+
 vi. turns on auto-fix on save for eslint
+
+
 
 note: i-iv can be done using the settings UI, but v and vi have to be inserted manually
