@@ -41,7 +41,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 	}
 }
 "editor.codeActionsOnSave": {
-    "source.fixAll": true
+	"source.fixAll": true
 }
 ```
 
