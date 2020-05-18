@@ -29,36 +29,38 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2. add this to settings.json (skip anything that's already there):
 
 ```
+"editor.tabSize": 2,
 "editor.formatOnSave": true,
 "[html]": {
 	"editor.defaultFormatter": "HookyQR.beautify"
 },
 "vetur.format.defaultFormatter.html": "js-beautify-html",
 "vetur.format.defaultFormatter.js": "none",
+"beautify.language": {
+        "js": []
+    },
 "vetur.format.defaultFormatterOptions": {
 	"js-beautify-html": {
 		"wrap_attributes": "auto"
 	}
 }
-"editor.codeActionsOnSave": {
-	"source.fixAll": true
-}
 ```
 
 which does the following:
 
-i. turns on format on save
+i. sets tab size to 2 spaces
 
-ii. sets default .html formatter to Beautify 
+ii. turns on format on save
 
-iii. sets vetur's html formatter to Beautify
+iii. sets default .html formatter to Beautify
 
-iv. sets vetur's js formatter to none (we will use eslint for this)
+iv. sets vetur's html formatter to Beautify
 
-v. turns off html attribute wrapping in vetur (it won't make a new line for every attribute)
+v. sets vetur's js formatter to none (we will use eslint for this)
 
-vi. turns on auto-fix on save for eslint
+vi. turns off .js formatting for Beautify (we will use eslint for this)
+
+vii. turns off html attribute wrapping in vetur (it won't make a new line for every attribute)
 
 
-
-note: i-iv can be done using the settings UI, but v and vi have to be inserted manually
+note: i-v can be done using the settings UI, but vi and vii have to be inserted manually
